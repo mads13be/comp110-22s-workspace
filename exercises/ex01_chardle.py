@@ -10,7 +10,7 @@ letter: str = input("Enter a single character: ")
 if 1 != len(letter):
     print("Error: Character must be a single character. ")
     exit()
-    print("Searching for " + letter + " in " + character_word)
+print("Searching for " + letter + " in " + character_word)
 instances: int = 0
 
 if character_word[0] == letter:
@@ -35,4 +35,4 @@ elif instances == 1:
     print("1 instance of " + letter + " found in " + character_word)
 else:
     instances_occured = str(instances)
-    print(instances_occured + " instances of " + character_word) 
+    print(instances_occured + " instances of " + letter + " found in " + character_word) 
